@@ -1,0 +1,171 @@
+*{
+margin:0;
+padding:0;
+box-sizing:0;
+}
+
+
+
+body{
+background: white;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-around;
+height: 100vh;
+font-family: 'Libre Franklin', sans-serif;
+}
+
+img{
+    width: 80%;
+}
+
+
+
+
+.w300{
+font-weight: 300;
+font-size: 25px;
+}
+
+.text{
+text-align: center;
+line-height: 35px;
+}
+
+.opacity{
+    color: rgba(0, 0, 0, 0.486);
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    height: 8%;
+    justify-content: space-between;
+}
+
+form input {
+    border-radius: 15px;
+    border: 1px hsl(223, 87%, 63%) solid;
+    padding-left: 35px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    color: rgb(194, 211, 255);
+    
+}
+
+
+
+form button {
+    border-radius: 15px;
+    background:  hsl(223, 87%, 63%);
+    color: white;
+    border: 0px; 
+    padding-top: 8px;
+    padding-bottom: 8px;
+    box-shadow: 0px 5px  25px   rgba(0, 0, 255, 0.253);
+}
+
+.place ::placeholder {
+     color: rgb(194, 211, 255);
+   
+}
+
+
+footer{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo_ft{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 200px;
+}
+
+
+.sub_logo_ft{
+    border: 1px rgb(194, 211, 255) solid;
+    padding: 15px;
+    border-radius: 100px;
+}
+
+.logo_ft img{
+    width: 25px;
+    height: 25px;
+}
+
+
+
+input[type='email']:invalid{
+    color: red;
+    border-color: red;
+}
+
+input[type="email"]:valid {
+  color: rgb(194, 211, 255);
+  border-color: rgb(194, 211, 255);
+}
+
+/* DESKTOP */
+
+@media(min-width:1200px){
+form{
+    all: unset;
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+    justify-content: space-between;
+
+}
+
+
+form input {
+    border-radius: 30px;
+    border: 1px hsl(223, 87%, 63%) solid;
+    padding-left: 40px;
+    padding-right:100px ;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: rgb(194, 211, 255);
+    width: 45%;
+    
+}
+
+
+
+form button {
+    border-radius: 30px;
+    background:  hsl(223, 87%, 63%);
+    color: white;
+    border: 0px; 
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 35px;
+    padding-right: 35px;
+    box-shadow: 0px 5px  25px   rgba(0, 0, 255, 0.253);
+
+
+
+}
+
+
+img{
+    width: 35%;
+}
+
+.w300{
+font-weight: 300;
+font-size: 38px;
+}
+
+.sub_logo_ft{
+    border: 1px rgb(194, 211, 255) solid;
+    padding: 15px;
+    border-radius: 100px;
+}
+}
